@@ -1,11 +1,13 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Get iOS app version'
+description: 'GitHub Action that gets the MARKETING_VERSION from your iOS app's project.yml file (XcodeGen project).'
+author: 'm.blanchette@agendrix.com'
 inputs:
-  milliseconds: # change this
+  project-yml-path:
+    description: 'Relative path to the project.yml file'
     required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+outputs:
+  app-version:
+    description: 'The MARKETING_VERSION fetched from your iOS app's project.yml'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
