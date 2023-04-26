@@ -1,6 +1,6 @@
 {
   "name": "get-ios-app-version",
-  "version": "0.1",
+  "version": "1.0.0",
   "private": true,
   "description": "GitHub Action that gets the MARKETING_VERSION from your iOS app's project.yml file (XcodeGen project).",
   "main": "lib/src/main.js",
