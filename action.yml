@@ -1,5 +1,5 @@
 name: 'Get iOS app version'
-description: 'GitHub Action that gets the MARKETING_VERSION from your iOS app's project.yml file (XcodeGen project).'
+description: 'GitHub Action that gets the MARKETING_VERSION from your iOS app''s project.yml file (XcodeGen project).'
 author: 'm.blanchette@agendrix.com'
 inputs:
   project-yml-path:
@@ -7,7 +7,7 @@ inputs:
     required: true
 outputs:
   app-version:
-    description: 'The MARKETING_VERSION fetched from your iOS app's project.yml'
+    description: 'The MARKETING_VERSION fetched from your iOS app''s project.yml'
 runs:
   using: 'node16'
   main: 'dist/index.js'
