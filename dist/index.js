@@ -48,7 +48,9 @@ function run() {
                 process.exit(1);
             }
             core.debug(`Running task with ${projectYmlPath}`);
-            const projectYmlFile = fs.readFileSync(projectYmlPath, { encoding: "utf8" });
+            const projectYmlFile = fs.readFileSync(projectYmlPath, {
+                encoding: "utf8"
+            });
             const projectYmlFileContent = yaml.load(projectYmlFile);
             const bundleShortVersionString = projectYmlFileContent.settings.base.MARKETING_VERSION;
             core.setOutput("app-version", bundleShortVersionString);
